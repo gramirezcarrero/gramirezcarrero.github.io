@@ -8,20 +8,27 @@
     <title>Ing. J. Geronimo Ramirez C.</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" media="print" href="print.css" />
+    <link rel="stylesheet" type="text/css" href="animate.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+
+    </script>
+    </script>
   </head>
   <body>
     <div class='wrapper'>
       <div class='sidebar-wrapper'>
-        <div class='profile-container'>
+        <div class='profile-container animated slideInDown'>
                 <div class="profile" alt=""></div>
                 <h1 class="name">J. Geronimo Ramirez C.</h1>
                 <h3 class="tagline">Full Stack Developer</h3>
                 <a class="tagline" target="_blank" href="https://drive.google.com/file/d/0B-SUsZWymjCYaWE0UjBGRHpKUlE/view?usp=sharing">resumen</a>
         </div>
-        <div class="contact-container container-block">
+        <div class="contact-container container-block animated swing">
                 <ul class="list-unstyled contact-list">
                     <li class="email"><i class="fa fa-envelope"></i><a href="mailto: gramirezcarrero@gmail.com">gramirezcarrero@gmail.com</a></li>
-                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:318 230 96 61">318 230 96 61</a></li>
+                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:302 410 31 50">302 410 31 50</a></li>
                     <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/geronim076/" target="_blank">linkedin.com/in/geronim076</a></li>
                     <li class="github"><i class="fa fa-github"></i><a href="https://github.com/gramirezcarrero" target="_blank">github.com/gramirezcarrero</a></li>
                     <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/geronimo_76" target="_blank">@geronimo_76</a></li>
@@ -73,33 +80,36 @@
         </div>
       </div>
       <div class='main-wrapper'>
-      <section class='section summary-section'>
+      <section class='section summary-section animated rollIn'>
         <h2 class='section-title'><i class="fa fa-user"></i>Perfil profesional</h2>
         <div class='summary'><p>
           Ingeniero en informática Desarrollador full stack, desarrollo de sistemas de información desde el análisis, diseño, implementación y documentación. Como principales metodologías de desarrollo: RUP (Rational Unified Process) junto con UML basada en seis principios claves, adaptar el proceso, equilibrar prioridades, demostrar el valor iterativamente, colaboración entre equipos, enfocarse en la calidad y elevar el nivel de abstracción.</p>
         </div>
       </section>
-      <section class="section experiences-section">
+      <section class="section experiences-section animated jello">
         <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiencia</h2>
         <div class='item'>
-          <div class='meta'>
-            <div class="upper-row">
-              <h3 class="job-title">Ing. Informática (Full stack)</h3>
-                <div class="time">2013 - Presente</div>
+          <a target="_blank" href="http://www.integ.ro/portafolio/">
+            <div class='meta'>
+              <div class="upper-row">
+                <h3 class="job-title">Ing. Informática (Full stack)</h3>
+                  <div class="time">2013 - Presente</div>
+              </div>
+              <div class="company">Integro(Amicava SAS), Medellín (Colombia)</div>
             </div>
-            <div class="company">Integro(Amicava SAS), Medellín (Colombia)</div>
-          </div>
+          </a>
           <div class="details">
-            <p>
+              <p> E-HEALTH, E-LEARNING, E-PUBLISHING, SITIOS WEB</p>
+              <p>
               Lograr junto a los desarrolladores del equipo acoplarnos a los estándares de calidad de software acordados por la empresa para que el trabajo se haga con la mayor calidad posible.</p>
-<p>Comprender y ser capaz junto al equipo de trabajo cumplir con los principios del buen diseño del software para producirlo de la mayor calidad y en el tiempo más rápido posible, para así poder seguir haciéndolo en el futuro.
+              <p>Comprender y ser capaz junto al equipo de trabajo cumplir con los principios del buen diseño del software para producirlo de la mayor calidad y en el menor tiempo, para así poder seguir haciéndolo en el futuro.
             </p>
           </div>
         </div>
         <div class='item'>
           <div class='meta'>
             <div class="upper-row">
-              <h3 class="job-title">Ing. Informática (Senior)</h3>
+              <h3 class="job-title">Ing. Informática</h3>
                 <div class="time">2012 - 2013</div>
             </div>
             <div class="company">MYT, Bogota (Colombia)</div>
@@ -111,7 +121,7 @@
             <p>Participar con los usuarios en el desarrollo de planes de diseño e implementación de soluciones de software. Definición del problema, los requisitos, el desarrollo y propuesta de soluciones.</p>
           </div>
       </section>
-      <section class="section projects-section">
+      <section class="section projects-section ">
                 <h2 class="section-title"><i class="fa fa-archive"></i>Proyectos</h2>
                 <div class="intro">
                     <p>Listado de proyectos en los que participé en los últimos 5 años:</p>
@@ -252,6 +262,7 @@ Entre los frameworks que usamos fueron (jquery, angular 1 y d3js). Entre los mot
       <div>
     </div>
     <script>
+
      var poss = Math.floor(Math.random()*4)
      var colors = ["#4CAC9D", "#5BB66F", "#A15277", "#FDA246"]
      document.getElementsByClassName('sidebar-wrapper')[0].style.backgroundColor = colors[poss]
